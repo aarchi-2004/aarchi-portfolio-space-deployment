@@ -1,10 +1,10 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Github, Linkedin, Download, ArrowDown } from "lucide-react"
+import { Github, Linkedin, FileText, ArrowDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sparkle, StarryBackground, FloatingOrb, MouseGlow } from "@/components/ui/starry-background"
-import { useIsMobile, usePrefersReducedMotion, useMousePosition } from "@/hooks/use-animations"
+import { useIsMobile, usePrefersReducedMotion } from "@/hooks/use-animations"
 
 export function StarryHero() {
     const isMobile = useIsMobile()
@@ -83,18 +83,13 @@ export function StarryHero() {
             <div className="relative z-10 max-w-6xl mx-auto w-full px-6 md:px-12 lg:px-24 py-24">
                 {/* Main headline */}
                 <div className="text-center space-y-4">
-                    {/* Subtitle */}
-                    <p className="text-sm md:text-base text-cyan-300/80 tracking-widest uppercase animate-fade-in-up will-change-transform">
-                        AI & Data Analytics Specialist
-                    </p>
-
-                    <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-white tracking-tight animate-fade-in-up will-change-transform" style={{ animationDelay: "0.1s" }}>
+                    <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-white tracking-tight animate-fade-in-up will-change-transform">
                         <span className="font-serif italic bg-gradient-to-r from-white via-sky-100 to-cyan-200 bg-clip-text text-transparent">
                             Aarchi Singh
                         </span>
                     </h1>
 
-                    <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/60 leading-relaxed animate-fade-in-up will-change-transform" style={{ animationDelay: "0.2s" }}>
+                    <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/60 leading-relaxed animate-fade-in-up will-change-transform" style={{ animationDelay: "0.1s" }}>
                         Building <span className="text-cyan-300">AI-driven solutions</span> & transforming complex data into{" "}
                         <span className="text-sky-300">actionable insights</span>
                     </p>
@@ -122,9 +117,9 @@ export function StarryHero() {
                         className="group bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white rounded-full px-6 h-12 font-medium transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 btn-press glow-hover"
                         asChild
                     >
-                        <a href="/resume.pdf" download>
-                            <Download className="mr-2 h-4 w-4 icon-bounce" />
-                            Download Resume
+                        <a href="/resume" target="_blank" rel="noopener noreferrer">
+                            <FileText className="mr-2 h-4 w-4 icon-bounce" />
+                            View Resume
                         </a>
                     </Button>
 
