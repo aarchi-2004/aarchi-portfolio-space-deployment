@@ -25,27 +25,18 @@ export function About() {
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-cyan-500 to-sky-500 rounded-t-2xl" />
 
               <p className="text-lg md:text-xl text-white/80 leading-relaxed">
-                Detail-oriented Computer Science undergraduate specializing in{" "}
+                Hi, I’m <span className="text-white font-medium">Aarchi Singh</span>. I’m a Computer Science undergraduate specializing in{" "}
                 <span className="text-cyan-300 font-medium">Artificial Intelligence</span> and{" "}
-                <span className="text-sky-300 font-medium">Data Analytics</span> with hands-on experience in
-                machine learning, deep learning, and statistical modeling.
+                <span className="text-sky-300 font-medium">Data Analytics</span>.
               </p>
 
               <p className="mt-6 text-lg md:text-xl text-white/80 leading-relaxed">
-                Proficient in <span className="text-white">Python</span>, <span className="text-white">SQL</span>, and
-                data visualization tools such as <span className="text-white">Power BI</span> and{" "}
-                <span className="text-white">Tableau</span> for building scalable, AI-driven solutions.
-              </p>
-
-              <p className="mt-6 text-lg md:text-xl text-white/80 leading-relaxed">
-                Skilled at transforming complex datasets into{" "}
-                <span className="text-cyan-300 font-medium">actionable insights</span>, optimizing workflows,
-                and delivering business intelligence that supports data-driven decision making.
+                I enjoy building <span className="text-cyan-300 font-medium">intelligent, data-driven solutions</span> using
+                Python, SQL, and machine learning, and turning complex data into <span className="text-sky-300 font-medium">meaningful insights</span>.
               </p>
 
               <p className="mt-6 text-lg md:text-xl text-white/60 leading-relaxed italic">
-                Recognized for strong problem-solving, adaptability, and collaborative teamwork
-                in fast-paced, innovation-focused environments.
+                I’m curious by nature, love solving real-world problems, and thrive in collaborative, fast-paced environments.
               </p>
             </div>
           </div>
