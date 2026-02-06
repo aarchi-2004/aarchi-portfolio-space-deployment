@@ -1,6 +1,6 @@
 "use client"
 
-import { ExternalLink } from "lucide-react"
+import { ExternalLink, Github, Rocket } from "lucide-react"
 import { useIntersectionObserver } from "@/hooks/use-animations"
 import { StarrySection, SectionTitle, Sparkle } from "@/components/ui/starry-background"
 
@@ -37,6 +37,8 @@ const projects = [
     ],
     skills: ["Databricks", "Apache Spark", "LakeFlow", "AWS S3", "Unity Catalog", "ETL/ELT"],
     gradient: "from-sky-500 to-blue-500",
+    githubUrl: "https://github.com/aarchi-2004/aarchi-portfolio-space",
+    deploymentUrl: "https://github.com/aarchi-2004/aarchi-portfolio-space-deployment",
   },
 ]
 
@@ -69,7 +71,35 @@ export function Projects() {
                       {project.title}
                     </h3>
                   </div>
-                  <ExternalLink className="w-5 h-5 text-white/30 group-hover:text-white/60 transition-colors icon-bounce" />
+
+                  {/* Project Links */}
+                  <div className="flex items-center gap-2">
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 rounded-lg hover:bg-white/10 transition-colors group/link"
+                        title="View GitHub Repository"
+                      >
+                        <Github className="w-5 h-5 text-white/40 group-hover/link:text-white transition-colors" />
+                      </a>
+                    )}
+                    {project.deploymentUrl && (
+                      <a
+                        href={project.deploymentUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 rounded-lg hover:bg-white/10 transition-colors group/link"
+                        title="View Deployment"
+                      >
+                        <Rocket className="w-5 h-5 text-white/40 group-hover/link:text-cyan-400 transition-colors" />
+                      </a>
+                    )}
+                    {!project.githubUrl && !project.deploymentUrl && (
+                      <ExternalLink className="w-5 h-5 text-white/30 group-hover:text-white/60 transition-colors icon-bounce" />
+                    )}
+                  </div>
                 </div>
 
                 {/* Description */}
@@ -108,3 +138,4 @@ export function Projects() {
     </StarrySection>
   )
 }
+
