@@ -37,8 +37,8 @@ const projects = [
     ],
     skills: ["Databricks", "Apache Spark", "LakeFlow", "AWS S3", "Unity Catalog", "ETL/ELT"],
     gradient: "from-sky-500 to-blue-500",
-    githubUrl: "https://github.com/aarchi-2004/aarchi-portfolio-space",
-    deploymentUrl: "https://github.com/aarchi-2004/aarchi-portfolio-space-deployment",
+    githubUrl: "https://github.com/aarchi-2004/goodcabs_data_analytics_databricks",
+    deploymentUrl: "www.aarchisingh.in",
   },
 ]
 
